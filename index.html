@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Business Intelligence - Mauricio de Castro</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1>BI Portfolio</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#cases">Cases</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact" class="btn-contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Transforme Dados em Decisões Inteligentes</h2>
+                <p>Veja como empresas reais aumentaram seus resultados com Business Intelligence</p>
+                <a href="#cases" class="btn btn-primary">Explorar Cases</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases" class="cases">
+        <div class="container">
+            <h2 class="section-title">5 Cases de Sucesso</h2>
+            <p class="section-subtitle">Conheça as transformações que Business Intelligence proporcionou a estas empresas</p>
+            
+            <div class="cases-grid">
+                <!-- Case 1: Distribuidora Santos -->
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>Distribuidora Santos</h3>
+                        <span class="case-tag">Distribuição</span>
+                    </div>
+                    <div class="case-info">
+                        <p class="case-subtitle">Do Caos ao Controle Total</p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+28%</span>
+                                <span class="metric-label">Margem Lucro</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">-60%</span>
+                                <span class="metric-label">Inadimplência</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+22%</span>
+                                <span class="metric-label">Faturamento</span>
+                            </div>
+                        </div>
+                        <p class="case-description">R$ 15 milhões/ano • 85 funcionários • São Paulo</p>
+                    </div>
+                    <button class="btn-expand" onclick="toggleCase('santos')">Ver Dashboards</button>
+                    <div id="santos" class="case-dashboards hidden">
+                        <div class="dashboards-grid">
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/santos/dashboard_santos_1_executivo.png" alt="Dashboard Executivo">
+                                <p>Visão Executiva</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/santos/dashboard_santos_2_estoque.png" alt="Dashboard Estoque">
+                                <p>Controle de Estoque</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/santos/dashboard_santos_3_comercial.png" alt="Dashboard Comercial">
+                                <p>Gestão Comercial</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/santos/dashboard_santos_4_financeiro.png" alt="Dashboard Financeiro">
+                                <p>Controle Financeiro</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/santos/dashboard_santos_5_lucratividade.png" alt="Dashboard Lucratividade">
+                                <p>Análise de Lucratividade</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/santos/dashboard_santos_6_operacional.png" alt="Dashboard Operacional">
+                                <p>Performance Operacional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2: TechSolutions -->
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>TechSolutions</h3>
+                        <span class="case-tag">Tecnologia</span>
+                    </div>
+                    <div class="case-info">
+                        <p class="case-subtitle">Escalando com Inteligência</p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+42%</span>
+                                <span class="metric-label">Margem Projetos</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">-55%</span>
+                                <span class="metric-label">Projetos Deficitários</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+35%</span>
+                                <span class="metric-label">Receita/Funcionário</span>
+                            </div>
+                        </div>
+                        <p class="case-description">R$ 8 milhões/ano • 45 funcionários • Florianópolis</p>
+                    </div>
+                    <button class="btn-expand" onclick="toggleCase('techsolutions')">Ver Dashboards</button>
+                    <div id="techsolutions" class="case-dashboards hidden">
+                        <div class="dashboards-grid">
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/techsolutions/dashboard_tech_1_executivo.png" alt="Dashboard Executivo">
+                                <p>Visão Executiva</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/techsolutions/dashboard_tech_2_projetos.png" alt="Dashboard Projetos">
+                                <p>Gestão de Projetos</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/techsolutions/dashboard_tech_3_produtividade.png" alt="Dashboard Produtividade">
+                                <p>Produtividade da Equipe</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/techsolutions/dashboard_tech_4_clientes.png" alt="Dashboard Clientes">
+                                <p>Análise de Clientes</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/techsolutions/dashboard_tech_5_financeiro.png" alt="Dashboard Financeiro">
+                                <p>Controle Financeiro</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/techsolutions/dashboard_tech_6_inovacao.png" alt="Dashboard Inovação">
+                                <p>Performance e Inovação</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3: Farmácia Vida Nova -->
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>Farmácia Vida Nova</h3>
+                        <span class="case-tag">Varejo</span>
+                    </div>
+                    <div class="case-info">
+                        <p class="case-subtitle">Competindo com as Grandes Redes</p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+18%</span>
+                                <span class="metric-label">Faturamento</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+32%</span>
+                                <span class="metric-label">Margem Lucro</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+25%</span>
+                                <span class="metric-label">Ticket Médio</span>
+                            </div>
+                        </div>
+                        <p class="case-description">R$ 4,5 milhões/ano • 18 funcionários • Belo Horizonte</p>
+                    </div>
+                    <button class="btn-expand" onclick="toggleCase('farmacia')">Ver Dashboards</button>
+                    <div id="farmacia" class="case-dashboards hidden">
+                        <div class="dashboards-grid">
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/farmacia/dashboard_farmacia_1_executivo.png" alt="Dashboard Executivo">
+                                <p>Visão Executiva</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/farmacia/dashboard_farmacia_2_vendas.png" alt="Dashboard Vendas">
+                                <p>Análise de Vendas</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/farmacia/dashboard_farmacia_3_estoque.png" alt="Dashboard Estoque">
+                                <p>Gestão de Estoque</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/farmacia/dashboard_farmacia_4_clientes.png" alt="Dashboard Clientes">
+                                <p>Perfil de Clientes</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/farmacia/dashboard_farmacia_5_margem.png" alt="Dashboard Margem">
+                                <p>Análise de Margem</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/farmacia/dashboard_farmacia_6_marketing.png" alt="Dashboard Marketing">
+                                <p>Marketing Inteligente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 4: Metalúrgica Progresso -->
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>Metalúrgica Progresso</h3>
+                        <span class="case-tag">Manufatura</span>
+                    </div>
+                    <div class="case-info">
+                        <p class="case-subtitle">Eficiência na Produção</p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+23%</span>
+                                <span class="metric-label">Margem Lucro</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+17%</span>
+                                <span class="metric-label">OEE</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">-67%</span>
+                                <span class="metric-label">Retrabalho</span>
+                            </div>
+                        </div>
+                        <p class="case-description">R$ 12 milhões/ano • 65 funcionários • Caxias do Sul</p>
+                    </div>
+                    <button class="btn-expand" onclick="toggleCase('metalurgica')">Ver Dashboards</button>
+                    <div id="metalurgica" class="case-dashboards hidden">
+                        <div class="dashboards-grid">
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/metalurgica/dashboard_metalurgica_1_executivo.png" alt="Dashboard Executivo">
+                                <p>Visão Executiva</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/metalurgica/dashboard_metalurgica_2_oee.png" alt="Dashboard OEE">
+                                <p>OEE em Tempo Real</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/metalurgica/dashboard_metalurgica_3_paradas.png" alt="Dashboard Paradas">
+                                <p>Análise de Paradas</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/metalurgica/dashboard_metalurgica_4_qualidade.png" alt="Dashboard Qualidade">
+                                <p>Controle de Qualidade</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/metalurgica/dashboard_metalurgica_5_custos.png" alt="Dashboard Custos">
+                                <p>Custos de Produção</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/metalurgica/dashboard_metalurgica_6_performance.png" alt="Dashboard Performance">
+                                <p>Performance Operacional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 5: ModaStyle E-commerce -->
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>ModaStyle E-commerce</h3>
+                        <span class="case-tag">E-commerce</span>
+                    </div>
+                    <div class="case-info">
+                        <p class="case-subtitle">Crescimento Exponencial Online</p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+85%</span>
+                                <span class="metric-label">Faturamento</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">-40%</span>
+                                <span class="metric-label">CAC</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+55%</span>
+                                <span class="metric-label">LTV</span>
+                            </div>
+                        </div>
+                        <p class="case-description">R$ 6 milhões/ano • 25 funcionários • São Paulo</p>
+                    </div>
+                    <button class="btn-expand" onclick="toggleCase('modastyle')">Ver Dashboards</button>
+                    <div id="modastyle" class="case-dashboards hidden">
+                        <div class="dashboards-grid">
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/modastyle/dashboard_modastyle_1_overview.png" alt="Dashboard Overview">
+                                <p>E-commerce Overview</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/modastyle/dashboard_modastyle_2_marketing.png" alt="Dashboard Marketing">
+                                <p>Marketing Performance</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/modastyle/dashboard_modastyle_3_produtos.png" alt="Dashboard Produtos">
+                                <p>Análise de Produtos</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/modastyle/dashboard_modastyle_4_comportamento.png" alt="Dashboard Comportamento">
+                                <p>Comportamento do Cliente</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/modastyle/dashboard_modastyle_5_estoque.png" alt="Dashboard Estoque">
+                                <p>Gestão Preditiva de Estoque</p>
+                            </div>
+                            <div class="dashboard-item">
+                                <img src="assets/dashboards/modastyle/dashboard_modastyle_6_integracao.png" alt="Dashboard Integração">
+                                <p>Integração de Dados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre o Autor</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Mauricio de Castro</h3>
+                    <p>Especialista em Business Intelligence e Gestão de Projetos com mais de 18 anos de experiência transformando dados em decisões estratégicas para empresas de todos os tamanhos.</p>
+                    <p>Através de consultoria, cursos e mentoria, ajudo PMEs a implementar soluções de BI que aumentam lucratividade, reduzem custos e criam vantagens competitivas sustentáveis.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <span class="number">18+</span>
+                            <span class="label">Anos de Experiência</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="number">50+</span>
+                            <span class="label">Projetos Implementados</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="number">5</span>
+                            <span class="label">Cases Documentados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2>Transforme Sua Empresa com BI</h2>
+            <p>Descubra como Business Intelligence pode aumentar seus resultados</p>
+            <div class="cta-buttons">
+                <a href="https://hotmart.com" class="btn btn-primary">Adquirir o Guia</a>
+                <a href="#" class="btn btn-secondary">Agendar Consultoria</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mauricio de Castro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
